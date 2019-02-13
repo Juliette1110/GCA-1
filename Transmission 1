@@ -1,0 +1,4 @@
+trans1 = "?sgnilhtrae ,ereht uoy erA .htraE tenalP ot noissimsnart tsrif ruo si sihT"
+
+decode1 = trans1[::-1]
+print(decode1)
