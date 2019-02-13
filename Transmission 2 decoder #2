@@ -1,1 +1,10 @@
-pip! install pydictionary
+!pip install pydictionary
+
+from pydictionary import pydictionary
+
+dictionary=pydictionary()
+
+#this is a test for the dictionary
+if "orange" in dictionary():
+ print ("true")
+ 
