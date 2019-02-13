@@ -1,0 +1,72 @@
+#This is what i got for the second one. It works but there might be an easier way to do it:
+
+trans2 = "Vrikyczexj. Nv yrmv zekvitvgkvu kirejdzjjzfej wifd pfli yfdvcreu ljzex fli gcrevkrip jtreezex kvtyefcfxp. Nv riv sifrutrjkzex kyzj dvjjrxv rj r jyfn fw gvrtv. Kf vogivjj fli rudzirkzfe wfi pfli gcrevk, nv riv svrdzex srtb fli dfjk svcfmvu kirejdzjjzfe wifd pfli gcrevk. 'Z rd Slqq Czxykpvri. Z'd rtklrccp jkrkzfevu rk kyv Xrddr Hlruirek, Jvtkfi Wfli. Rj r dvdsvi fw kyv vczkv Lezmvijv Gifkvtkzfe Lezk fw kyv Jgrtv Irexvi Tfigj, Z gifkvtk kyv Xrcrop wifd kyv kyivrk fw zemrjzfe wifd kyv vmzc Vdgvifi Qlix, jnfie vevdp fw kyv Xrcrtkzt Rcczretv!' Nv riv yrggp kf yvri kyrk Slqq Czxykpvri zj gifmzuzex pfli gcrevk jrwvkp wifd fli vevdzvj, kyfjv cvu sp Vdgvifi Qlix! Nv riv r gvrtvwlc gvfgcv. Nv nflcu czbv kf befn dfiv rsflk Gzqqr Gcrevk."
+
+key = {
+    "A": "J",
+    "B": "K",
+    "C": "L",
+    "D": "M",
+    "E": "N",
+    "F": "O",
+    "G": "P",
+    "H": "Q",
+    "I": "R",
+    "J": "S",
+    "K": "T",
+    "L": "U",
+    "M": "V",
+    "N": "W",
+    "O": "X",
+    "P": "Y",
+    "Q": "Z",
+    "R": "A",
+    "S": "B",
+    "T": "C",
+    "U": "D",
+    "V": "E",
+    "W": "F",
+    "X": "G",
+    "Y": "H",
+    "Z": "I",
+    "a": "j",
+    "b": "k",
+    "c": "l",
+    "d": "m",
+    "e": "n",
+    "f": "o",
+    "g": "p",
+    "h": "q",
+    "i": "r",
+    "j": "s",
+    "k": "t",
+    "l": "u",
+    "m": "v",
+    "n": "w",
+    "o": "x",
+    "p": "y",
+    "q": "z",
+    "r": "a",
+    "s": "b",
+    "t": "c",
+    "u": "d",
+    "v": "e",
+    "w": "f",
+    "x": "g",
+    "y": "h",
+    "z": "i",
+    " ": " ",
+    ".": ".",
+    ",": ",",
+    "!": "?",
+    ";": ";",
+    ":": ":",
+    "-": "-",
+    "'": "'"
+}
+
+decode2 = ""
+for i in range(0, len(trans2)):
+  decode2 += key[trans2[i]]
+  
+print(decode2)
