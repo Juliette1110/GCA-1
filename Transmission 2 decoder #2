@@ -7,4 +7,25 @@ dictionary=pydictionary()
 #this is a test for the dictionary
 if "orange" in dictionary():
  print ("true")
+ >>>
  
+import re
+#this is used to remove punctuation from a string 
+fline = re.sub('['+string.punctuation+']', '', "this is crazy! carrots aren't purple.") 
+
+print (fline)
+
+
+from spellchecker import SpellChecker
+
+spell = SpellChecker()
+
+bytemessage=b"the diniing hall always has pizza"
+#this converts the bytecode to unicode
+secretcode=bytemessage.decode()
+
+#this takes unicode message and splits it into indevidual strings on the spaces
+#and then detects any words not in the dicionary
+misspelled = spell.unknown(secretcode.split())
+#this prints any words that do not exist in the dictionary
+print(misspelled, len(misspelled))
