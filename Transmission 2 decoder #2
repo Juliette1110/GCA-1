@@ -1,20 +1,4 @@
-!pip install pydictionary
-
-from pydictionary import pydictionary
-
-dictionary=pydictionary()
-
-#this is a test for the dictionary
-if "orange" in dictionary():
- print ("true")
- >>>
- 
-import re
-#this is used to remove punctuation from a string 
-fline = re.sub('['+string.punctuation+']', '', "this is crazy! carrots aren't purple.") 
-
-print (fline)
-
+!pip install pyspellchecker
 
 from spellchecker import SpellChecker
 
@@ -29,3 +13,17 @@ secretcode=bytemessage.decode()
 misspelled = spell.unknown(secretcode.split())
 #this prints any words that do not exist in the dictionary
 print(misspelled, len(misspelled))
+
+if len(misspelled)==0:
+  print (secretcode)
+  
+  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+  
+  
+  import re
+#this is used to remove punctuation from a string 
+s = "string. With. Punctuation?"
+s = re.sub(r'[^\w\s]','',s)
+
+
+print (s)
