@@ -1,0 +1,8 @@
+To encode this first transmission, it is a simple matter of running the same function (renamed "encode1") on a readable statement. The example here is the real transmission reverted to its original form and the statement: "Notre Dame almost made it though the football season undefeated! :("
+
+trans1 = "This is our first transmission to Planet Earth. Are you there, earthlings?"
+
+sample = "Notre Dame almost made it though the football season undefeated! :("
+
+encode1 = trans1[::-1], sample[::-1]
+print(encode1)
